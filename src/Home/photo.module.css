@@ -1,0 +1,7 @@
+.photo{
+    clip-path: polygon(16% 0, 100% 0%, 84% 100%, 0% 100%);
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+
+}
