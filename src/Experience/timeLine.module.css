@@ -1,0 +1,34 @@
+.timeLine{
+    margin-top: 5vh;
+}
+
+.left,
+.right {
+    display       : inline-block;
+    vertical-align: top;
+}
+
+.left h1,
+.right h1 {
+    color: #2c2d2a;
+    font-size: 35px;
+    padding-bottom:2vh;
+}
+
+.left h1{
+    padding-bottom: 10vh;
+}
+
+.left {
+    width     : 50%;
+    padding   : 0;
+    margin    : 0;
+    padding-right: 5vw;
+    text-align: right;
+}
+
+
+.right {
+    width       : 50%;
+    padding-right: 15vw;
+}

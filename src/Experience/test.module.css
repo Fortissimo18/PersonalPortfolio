@@ -1,0 +1,78 @@
+.timeline {
+    line-height: 1.4em;
+    list-style : none;
+    margin     : 0;
+    padding    : 0;
+    width      : 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline h4,
+.timeline h5,
+.timeline h6 {
+    line-height: inherit;
+}
+
+.timelineItem {
+    padding-left: 40px;
+    position    : relative;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineInfo {
+    font-size     : 12px;
+    font-weight   : 700;
+    letter-spacing: 3px;
+    margin        : 0 0 0.5em 0;
+    text-transform: uppercase;
+    white-space   : nowrap;
+}
+
+.timelineMarker {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    width   : 15px;
+}
+.timelineMarker #left{
+    margin-left: 40vw;
+}
+.timelineMarker:before {
+    background   : #FF6B6B;
+    border       : 3px solid transparent;
+    border-radius: 100%;
+    content      : "";
+    display      : block;
+    height       : 15px;
+    position     : absolute;
+    top          : 4px;
+    left         : 0;
+    width        : 15px;
+    transition   : background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timelineMarker:after {
+    content   : "";
+    width     : 3px;
+    background: #CCD5DB;
+    display   : block;
+    position  : absolute;
+    top       : 24px;
+    bottom    : 0;
+    left      : 6px;
+}
+
+.timelineMtem:last-child .timelineMarker:after {
+    content: none;
+}
+
+.timelineMtem:not(.period):hover .timelineMarker:before {
+    background: transparent;
+    border    : 3px solid #FF6B6B;
+}

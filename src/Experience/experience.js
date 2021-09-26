@@ -1,8 +1,12 @@
 import React from "react";
-
+import TimeLine from "./timeLine";
+import Test from "./test";
 function experience (){
     return(
-        <h1>Experience</h1>
+        <>
+        <TimeLine></TimeLine>
+
+        </>
     );
 }
 

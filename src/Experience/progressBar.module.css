@@ -1,0 +1,99 @@
+/* .timeline {
+    line-height: 1.4em;
+    list-style : none;
+    margin     : 0;
+    padding    : 0;
+    padding-top: 2vh;
+    width      : 100%;
+} */
+
+
+
+.timelineItem {
+    padding-left: 40px;
+    position    : relative;
+    list-style: none;
+    padding-bottom: 4vh;
+}
+
+.timelineItem.left {
+    padding-right: 40px;
+    padding-bottom: 6vh;
+}
+.timelineItem.left ul{
+    list-style: none;
+}
+
+.timelineItem:last-child {
+    padding-bottom: 0;
+}
+
+.timelineTitle{
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.timelineCompany{
+    font-size: 16px;
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
+}
+.timelineInfo {
+    font-size     : 12px;
+    font-weight   : 700;
+    letter-spacing: 3px;
+    margin        : 0 0 0.5em 0;
+    padding:0;
+    text-transform: uppercase;
+    /* white-space   : nowrap; */
+    /* background-color: #4b3b40; */
+    width: auto;
+}
+.timelineContent ul{
+    padding-left:1vw;
+}
+
+.timelineMarker {
+    position: absolute;
+    top     : 0;
+    bottom  : 0;
+    left    : 0;
+    width   : 15px;
+}
+
+.timelineMarker.left {
+    margin-left: 43.5vw;
+}
+
+.timelineMarker:before {
+    background: #4b3b40;
+    clip-path : polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    content   : "";
+    display   : block;
+    height    : 15px;
+    position  : absolute;
+    top       : 4px;
+    left      : 0;
+    width     : 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timelineMarker:after {
+    content   : "";
+    width     : 1px;
+    background: #737078;
+    display   : block;
+    position  : absolute;
+    top       : 24px;
+    bottom    : 0;
+    left      : 6px;
+}
+
+.timelineMtem:last-child .timelineMarker:after {
+    content: none;
+}
+
+.timelineMtem:not(.period):hover .timelineMarker:before {
+    background: transparent;
+    border    : 3px solid #FF6B6B;
+}
